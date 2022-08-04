@@ -1,0 +1,27 @@
+{
+  "name": "hak_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/ChurbanovaEkaterina/Hakaton_2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChurbanovaEkaterina/Hakaton_2/issues"
+  },
+  "homepage": "https://github.com/ChurbanovaEkaterina/Hakaton_2#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
