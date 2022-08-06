@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ChurbanovaEkaterina/Hakaton_2#readme",
   "dependencies": {
+    "axios": "^0.27.2",
     "express": "^4.18.1"
   },
   "devDependencies": {
