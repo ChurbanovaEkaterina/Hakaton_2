@@ -6,6 +6,10 @@ function getData() {
   .then(data=>{
     arr=data
   })
+  .catch(e => {
+    console.log(e);
+    res.status(404).json({msg:'not found'})
+  })
 
 }
 
@@ -17,7 +21,10 @@ function filterData() {
     console.log(data)
     posterData(data)
   })
-
+  .catch(e => {
+    console.log(e);
+    res.status(404).json({msg:'not found'})
+  })
 }
 let body =document.getElementById('root')
 
@@ -33,9 +40,17 @@ function posterData(array) {
     let poster = document.createElement("IMG");
     poster.setAttribute("src", item['poster_path'])
     div.appendChild(poster)
+    let b = document.createElement('b')
+    div.appendChild(b)
+    let vote = document.createTextNode(`Vote average: ${item['vote_average']}`)
+    b.appendChild(vote)
     let discription = document.createElement('p')
     div.appendChild(discription)
     let textDisc = document.createTextNode(item['overview'])
     discription.appendChild(textDisc)
+    let button = document.createElement('button')
+    div.appendChild(button)
+    let textButton = document.createTextNode('Add this film!')
+    button.appendChild(textButton)
   } )
 }

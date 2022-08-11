@@ -3,8 +3,30 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
 	<title></title>
 	<style type="text/css">
+	*{
+		font-family: 'Josefin Slab', serif;
+	}
+	body{
+		background-color: lightpink;
+	}
+	#namekey3 {
+		border-radius: 2px;
+		padding: 15px 32px;
+		font-size: 20px;
+		border: none;
+		text-decoration: none;
+	}
+	#buttonSearsh{
+		padding: 15px 32px;
+		text-align: center;
+		font-size: 20px;
+		border: none;
+	}
 	img {
 		width: 100%
 	}
@@ -13,10 +35,15 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		justify-content: space-around;
-
 	}
 	div {
-		width: 33%;
+		width: 24%;
+		margin: 5px;
+		background-color: white;
+	}
+	button {
+		margin-bottom:0;
+		padding: 10px 16px;
 	}
 	</style>
 </head>
@@ -24,7 +51,7 @@
 	<h1>What your key-word?</h1>
 
 		<input type="text" id='namekey3' value="">
-	    <button type="button" onClick ="filterData()">Search</button>
+	    <button type="button" onClick ="filterData()" id="buttonSearsh">Search</button>
 <section id='root'></section>
 	<div></div>
 
